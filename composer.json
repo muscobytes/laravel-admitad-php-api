@@ -18,5 +18,15 @@
     },
     "require": {
         "admitad/api": "dev-master"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Muscobytes\\LaravelAdmitadApi\\AdmitadServiceProvider"
+            ],
+            "aliases": {
+                "Admitad": "Muscobytes\\LaravelAdmitadApi\\Facades\\Admitad"
+            }
+        }
     }
 }
