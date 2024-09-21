@@ -2,6 +2,7 @@
 
 namespace Muscobytes\LaravelAdmitadApi;
 
+use Admitad\Api\Api;
 use Illuminate\Support\ServiceProvider;
 
 class AdmitadServiceProvider extends ServiceProvider
@@ -25,5 +26,9 @@ class AdmitadServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../config/admitad.php', 'admitad'
         );
+
+        $this->app->bind('admitad', function($app) {
+            return new  Api();
+        });
     }
 }
