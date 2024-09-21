@@ -12,9 +12,11 @@ class AdmitadServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->publishes([
-            __DIR__.'/../config/admitad.php' => config_path('admitad.php'),
-        ]);
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__ . '/../config/admitad.php' => config_path('admitad.php'),
+            ], 'admitad');
+        }
     }
 
 
