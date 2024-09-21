@@ -1,0 +1,14 @@
+{
+    "name": "muscobytes/laravel-admitad-php-api",
+    "version": "0.0.1",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Muscobytes\\LaravelAdmitadApi\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": "^9.0"
+    }
+}
