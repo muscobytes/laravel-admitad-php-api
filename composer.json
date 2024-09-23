@@ -1,5 +1,5 @@
 {
-    "name": "muscobytes/laravel-admitad-php-api",
+    "name": "muscobytes/laravel-admitad-api",
     "version": "0.0.1",
     "type": "library",
     "autoload": {
