@@ -1,5 +1,5 @@
 # PHP 8.3
-FROM php:8.3-cli-alpine as base
+FROM php:8.3-cli-alpine AS base
 
 WORKDIR /var/www/html
 
