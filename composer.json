@@ -16,9 +16,6 @@
     "require-dev": {
         "orchestra/testbench": "^9.0"
     },
-    "require": {
-        "admitad/api": "dev-master"
-    },
     "extra": {
         "laravel": {
             "providers": [
@@ -28,5 +25,8 @@
                 "Admitad": "Muscobytes\\LaravelAdmitadApi\\Facades\\Admitad"
             }
         }
+    },
+    "require": {
+        "admitad/api": "^0.3"
     }
 }
