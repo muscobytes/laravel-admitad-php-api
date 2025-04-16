@@ -29,8 +29,8 @@ class AdmitadServiceProvider extends ServiceProvider
             __DIR__.'/../config/admitad.php', 'admitad'
         );
 
-        $this->app->bind('admitad', function($app) {
-            return new  Api();
+        $this->app->bind('Admitad', function($app) {
+            return new Api();
         });
     }
 }
